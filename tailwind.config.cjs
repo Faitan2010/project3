@@ -68,6 +68,7 @@ module.exports = {
         'dark-green': '#00735E',
         'light-green': '#BCE7AE',
         red: '#FF6565',
+        white: '#F3FFF8'
       },
       screens: {
 				'max-2xl': {'max': '1440px'},
