@@ -5,3 +5,44 @@
 
 
 @import "fonts";
+
+.container {
+    max-width: 1440px;
+}
+.linear-gradient {
+    background: linear-gradient(360deg, rgba(196, 196, 196, 0) 0%, #F3A583 79.16%);
+    transform: rotate(360deg);
+    height: 1280px;
+}
+.language {
+    max-width: 1030px;
+    margin: 0 auto;
+}
+.before-dot::before {
+    top: 50%;
+}
+.header-logo {
+    .h2-span {
+        font-size: 166px;
+        line-height: 202.73px;
+    }
+    max-width: 1030px;
+    margin: 0 auto;
+}
+.first-paragraf {
+    font-size: 45px;
+    line-height: 140%;
+}
+.products {
+    margin: 0 auto;
+    max-width: 1040px;
+    font-size: 26px;
+}
+.product-text {
+    font-size: 30px;
+    line-height: 140%;
+}
+.flex-div {
+    margin: 0 auto;
+    max-width: 1060px;
+}
