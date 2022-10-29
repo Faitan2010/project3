@@ -77,6 +77,9 @@ module.exports = {
                 '2xl': '1442px',
                 'xl': '1234px',
             },
+            gridTemplateColumns: {
+                'country-table-row': '24px 26.88% 32px minmax(0, 1fr)',
+            }
         },
     },
     plugins: [],
