@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,71 +6,88 @@
 @import "fonts";
 
 .container {
-    max-width: 1440px;
+	max-width: 1440px;
 }
+
 .linear-gradient {
-    background: linear-gradient(360deg, rgba(196, 196, 196, 0) 0%, #F3A583 79.16%);
-    transform: rotate(360deg);
-    height: 1280px;
+	background: linear-gradient(360deg, rgba(196, 196, 196, 0) 0%, #F3A583 79.16%);
+	transform: rotate(360deg);
+	height: 1280px;
 }
+
 .language {
-    max-width: 1030px;
-    margin: 0 auto;
+	max-width: 1030px;
+	margin: 0 auto;
 }
+
 .links-info-first {
-    max-width: 435px;
+	max-width: 435px;
 }
+
 .links-info-second {
-    max-width: 300px;
+	max-width: 300px;
 }
+
 .header-logo {
-    .h2-span {
-        font-size: 166px;
-        line-height: 202.73px;
-    }
-    max-width: 1030px;
-    margin: 0 auto;
+	.h2-span {
+		font-size: 166px;
+		line-height: 202.73px;
+	}
+
+	max-width: 1030px;
+	margin: 0 auto;
 }
+
 .first-paragraf {
-    font-size: 45px;
-    line-height: 140%;
+	font-size: 45px;
+	line-height: 140%;
 }
+
 .products {
-    margin: 0 auto;
-    max-width: 1040px;
-    font-size: 26px;
+	margin: 0 auto;
+	max-width: 1040px;
+	font-size: 26px;
 }
+
 .product-text {
-    font-size: 30px;
-    line-height: 140%;
+	font-size: 30px;
+	line-height: 140%;
 }
+
 .flex-div {
-    margin: 0 auto;
-    max-width: 1060px;
+	margin: 0 auto;
+	max-width: 1060px;
 }
+
 .section-container {
-    max-width: 1000px;
-    div {
-        width: 40%;
-    }
+	max-width: 1000px;
+
+	div {
+		width: 40%;
+	}
 }
+
 .section-bg {
-    height: 673px;
+	height: 673px;
 }
+
 .modal-bg {
-    height: 229px;
-    max-width: 1200px;
-    background-color: #fff;
-    border-radius: 20px;
+	height: 229px;
+	max-width: 1200px;
+	background-color: #fff;
+	border-radius: 20px;
 }
+
 .modal-text {
-    font-size: 35px;
-    line-height: 150%;
-    p {
-        margin: 0 auto;
-        max-width: 950px;
-    }
-    span {
-        border-radius: 6px;
-    }
+	font-size: 35px;
+	line-height: 150%;
+
+	p {
+		margin: 0 auto;
+		max-width: 950px;
+	}
+
+	span {
+		border-radius: 6px;
+	}
 }
