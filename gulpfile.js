@@ -8,10 +8,8 @@ import {server} from "./gulp/tasks/server.js";
 import {scss} from "./gulp/tasks/scss.js";
 import {js} from "./gulp/tasks/js.js";
 import {images} from "./gulp/tasks/images.js";
-import {fontsStyle, otfToTtf, ttfToWoff} from "./gulp/tasks/fonts.js";
 import {svgSprive} from "./gulp/tasks/svgSprite.js";
 import {zip} from "./gulp/tasks/zip.js";
-import {ftp} from "./gulp/tasks/ftp.js";
 
 global.app = {
 	isBuild: process.argv.includes('--build'),
@@ -33,14 +31,12 @@ function watcher() {
 
 export {svgSprive}
 
-const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
-
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
+const mainTasks = gulp.parallel(copy, html, scss, js, images);
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTasks);
 const deployZIP = gulp.series(reset, mainTasks, zip);
-const deployftp = gulp.series(reset, mainTasks, ftp);
+const deployftp = gulp.series(reset, mainTasks);
 
 export {dev};
 export {build};
