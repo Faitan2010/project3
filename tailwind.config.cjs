@@ -70,7 +70,8 @@ module.exports = {
                 'white-green': '#DEF3D7',
                 red: '#FF6565',
                 pink: '#F4BDBD',
-                'dark-white': '#F3FFF8'
+                'dark-white': '#F3FFF8',
+                violet: '#692685'
             },
             screens: {
                 'max-2xl': {'max': '1440px'},
