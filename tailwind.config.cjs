@@ -76,6 +76,7 @@ module.exports = {
                 'max-2xl': {'max': '1440px'},
                 '2xl': '1442px',
                 'xl': '1234px',
+                'costil':'1100px'
             },
             gridTemplateColumns: {
                 'country-table-row': '24px 26.88% 32px minmax(0, 1fr)',
