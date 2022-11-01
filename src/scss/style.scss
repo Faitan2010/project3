@@ -55,12 +55,27 @@
 	border-radius: 20px;
 }
 .modal-div {
-    margin-top: -116px;
+	margin-top: -116px
 }
 @media (min-width: 640px) {
 	.modal-div {
-		margin-top: -80px;
+		margin-top: -60px;
 }
+}
+@media (min-width: 768px) {
+	.modal-div {
+		margin-top: -70px;
+}
+}
+@media (min-width: 1024px) {
+	.modal-div {
+		margin-top: -90px;
+	}
+}
+@media (min-width: 1234px) {
+	.modal-div {
+		margin-top: -116px;
+	}
 }
 .dark-green-section {
     padding-bottom: 116px;

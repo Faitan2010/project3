@@ -5,5 +5,6 @@ window.addEventListener('load', () => {
     const mask = document.querySelector('.mask')
     setTimeout(() => {
         mask.classList.add('mask-none');
-    }, 1200)
+    }, 100)
+    new WOW().init();
 })
