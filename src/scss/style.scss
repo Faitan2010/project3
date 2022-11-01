@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@import "animate";
 @import "fonts";
 
 .container {
@@ -13,7 +13,21 @@
 	background: linear-gradient(360deg, rgba(196, 196, 196, 0) 0%, #F3A583 79.16%);
 	transform: rotate(360deg);
 }
-
+.loader {
+	border:8px solid rgba(0, 115, 94, 0.6);
+	border-radius: 50%;
+    border-left-color:rgba(0, 115, 94, 1) ;
+    animation: loader 1.3s linear infinite;
+}
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.mask-none {
+    opacity: 0;
+    z-index: -1;
+}
 .language {
 	max-width: 1030px;
 	margin: 0 auto;
