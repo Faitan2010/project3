@@ -13,7 +13,7 @@
     <title></title>
 </head>
 
-<body class="bg-light-green font-montserrat relative z-[5]">
+<body class="bg-light-green font-montserrat relative z-[5] overflow-x-hidden">
     <div class="w-full h-full bg-light-green fixed top-0 z-50 transition-[0.6s] flex justify-center items-center mask">
         <div class="w-[100px] h-[100px] loader">
 
@@ -154,7 +154,7 @@
             <span class="text-white bg-red pl-2 pr-2">25</span> trade names
         </p>
     </div>
-    <section class="mx-auto third-section lg:pt-17 pt-5 pl-5 pr-5">
+    <section class="mx-auto third-section lg:pt-17 pt-5 pl-5 pr-5 buttons">
         <div class="pb-7">
             <p class="font-jost font-normal text-dark-green text-2xl md:text-left text-center">
                 Please choose a region for further information:
@@ -163,60 +163,568 @@
         <div
             class="flex flex-wrap gap-4 font-jost text-2xl md:mb-12 mb-4 font-normal flex-container mx-auto md:mx-0 md:justify-start justify-center">
             <div
-                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer">
+                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer button active:bg-dark-green active:text-white active">
                 <button class="md:text-2xl pt-1 pb-1 text-[16px]">
                     East Asia
                 </button>
             </div>
             <div
-                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer">
+                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer button">
                 <button class="md:text-2xl pt-1 pb-1 text-[16px]">
                     South East Asia
                 </button>
             </div>
             <div
-                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer">
+                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer button">
                 <button class="md:text-2xl pt-1 pb-1 text-[16px]">
                     Central Asia
                 </button>
             </div>
             <div
-                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer">
+                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer button">
                 <button class=" md:text-2xl pt-1 pb-1 text-[16px]">
                     the Middle East
                 </button>
             </div>
             <div
-                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer">
+                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer button">
                 <button class=" md:text-2xl pt-1 pb-1 text-[16px]">
                     Eastern Europe
                 </button>
             </div>
             <div
-                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer">
+                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer button">
                 <button class="md:text-2xl pt-1 pb-1 text-[16px]">
                     Africa
                 </button>
             </div>
             <div
-                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer">
+                class="bg-white text-dark-green pl-4.5 pr-4.5 hover:bg-dark-green hover:text-white section-buttons cursor-pointer button">
                 <button class="md:text-2xl pt-1 pb-1 text-[16px]">
                     Latin America
                 </button>
             </div>
         </div>
-        <div class="mb-16 md:grid lg:grid-cols-country-table md:grid-cols-country-table-tablet md:gap-8 block">
-            <div class="mb-8 md:mb-0">
+        <div class="mb-16 grid lg:grid-cols-country-table md:grid-cols-country-table-tablet md:gap-8 pills-block">
+            <div class="mb-8 md:mb-0 block ">
                 <img src="./img/MAP_PIC.svg" alt="#" class="mx-auto md:mx-0">
             </div>
             <div class="flex flex-col justify-between">
-                <div class="">
+                <div class="md:pb-0 pb-7">
                     <div class="md:pb-5 pb-2 ml-4 relative flex gap-6.5 pink-rec">
                         <span class="w-4 h-4 bg-red self-center"></span>
                         <p class="font-jost font-medium text-dark-green md:text-xl text-[15px]">Products on sale</p>
                     </div>
 
-                    <div class="mb-6">
+                    <div class="mb-6 block">
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class=" ml-4 relative pb-3 flex gap-6.5 pink-rec">
+                        <span class="w-4 h-4 self-center bg-pink"></span>
+                        <p
+                            class="font-jost font-medium text-dark-green md:text-xl text-[15px]  relative md:block hidden ">
+                            Trials</p>
+                        <p
+                            class="font-jost font-medium text-dark-green md:text-xl text-[15px]  relative md:hidden block">
+                            Products on
+                            trials</p>
+                    </div>
+                    <div class="pl-12 relative div-name-country">
+                        <p class="font-jost font-normal text-dark-green md:text-xl text-[15px]">
+                            Argentina, Bolivia, Colombia, Costa Rica, El Salvador, Mexico
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-16  lg:grid-cols-country-table md:grid-cols-country-table-tablet md:gap-8 hidden pills-block">
+            <div class="mb-8 md:mb-0 block ">
+                <img src="./img/MAP_PIC.svg" alt="#" class="mx-auto md:mx-0">
+            </div>
+            <div class="flex flex-col justify-between">
+                <div class="md:pb-0 pb-7">
+                    <div class="md:pb-5 pb-2 ml-4 relative flex gap-6.5 pink-rec">
+                        <span class="w-4 h-4 bg-red self-center"></span>
+                        <p class="font-jost font-medium text-dark-green md:text-xl text-[15px]">Products on sale</p>
+                    </div>
+
+                    <div class="mb-6 block">
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class=" ml-4 relative pb-3 flex gap-6.5 pink-rec">
+                        <span class="w-4 h-4 self-center bg-pink"></span>
+                        <p
+                            class="font-jost font-medium text-dark-green md:text-xl text-[15px]  relative md:block hidden ">
+                            Trials</p>
+                        <p
+                            class="font-jost font-medium text-dark-green md:text-xl text-[15px]  relative md:hidden block">
+                            Products on
+                            trials</p>
+                    </div>
+                    <div class="pl-12 relative div-name-country">
+                        <p class="font-jost font-normal text-dark-green md:text-xl text-[15px]">
+                            Argentina, Bolivia, Colombia, Costa Rica, El Salvador, Mexico
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-16  lg:grid-cols-country-table md:grid-cols-country-table-tablet md:gap-8 hidden pills-block">
+            <div class="mb-8 md:mb-0 block ">
+                <img src="./img/MAP_PIC.svg" alt="#" class="mx-auto md:mx-0">
+            </div>
+            <div class="flex flex-col justify-between">
+                <div class="md:pb-0 pb-7">
+                    <div class="md:pb-5 pb-2 ml-4 relative flex gap-6.5 pink-rec">
+                        <span class="w-4 h-4 bg-red self-center"></span>
+                        <p class="font-jost font-medium text-dark-green md:text-xl text-[15px]">Products on sale</p>
+                    </div>
+
+                    <div class="mb-6 block">
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class=" ml-4 relative pb-3 flex gap-6.5 pink-rec">
+                        <span class="w-4 h-4 self-center bg-pink"></span>
+                        <p
+                            class="font-jost font-medium text-dark-green md:text-xl text-[15px]  relative md:block hidden ">
+                            Trials</p>
+                        <p
+                            class="font-jost font-medium text-dark-green md:text-xl text-[15px]  relative md:hidden block">
+                            Products on
+                            trials</p>
+                    </div>
+                    <div class="pl-12 relative div-name-country">
+                        <p class="font-jost font-normal text-dark-green md:text-xl text-[15px]">
+                            Argentina, Bolivia, Colombia, Costa Rica, El Salvador, Mexico
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-16  lg:grid-cols-country-table md:grid-cols-country-table-tablet md:gap-8 hidden pills-block">
+            <div class="mb-8 md:mb-0 block ">
+                <img src="./img/MAP_PIC.svg" alt="#" class="mx-auto md:mx-0">
+            </div>
+            <div class="flex flex-col justify-between">
+                <div class="md:pb-0 pb-7">
+                    <div class="md:pb-5 pb-2 ml-4 relative flex gap-6.5 pink-rec">
+                        <span class="w-4 h-4 bg-red self-center"></span>
+                        <p class="font-jost font-medium text-dark-green md:text-xl text-[15px]">Products on sale</p>
+                    </div>
+
+                    <div class="mb-6 block">
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class=" ml-4 relative pb-3 flex gap-6.5 pink-rec">
+                        <span class="w-4 h-4 self-center bg-pink"></span>
+                        <p
+                            class="font-jost font-medium text-dark-green md:text-xl text-[15px]  relative md:block hidden ">
+                            Trials</p>
+                        <p
+                            class="font-jost font-medium text-dark-green md:text-xl text-[15px]  relative md:hidden block">
+                            Products on
+                            trials</p>
+                    </div>
+                    <div class="pl-12 relative div-name-country">
+                        <p class="font-jost font-normal text-dark-green md:text-xl text-[15px]">
+                            Argentina, Bolivia, Colombia, Costa Rica, El Salvador, Mexico
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-16 lg:grid-cols-country-table md:grid-cols-country-table-tablet md:gap-8 hidden pills-block">
+            <div class="mb-8 md:mb-0 block">
+                <img src="./img/MAP_PIC.svg" alt="#" class="mx-auto md:mx-0">
+            </div>
+            <div class="flex flex-col justify-between">
+                <div class="md:pb-0 pb-7">
+                    <div class="md:pb-5 pb-2 ml-4 relative flex gap-6.5 pink-rec">
+                        <span class="w-4 h-4 bg-red self-center"></span>
+                        <p class="font-jost font-medium text-dark-green md:text-xl text-[15px]">Products on sale</p>
+                    </div>
+
+                    <div class="mb-6 block">
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class=" ml-4 relative pb-3 flex gap-6.5 pink-rec">
+                        <span class="w-4 h-4 self-center bg-pink"></span>
+                        <p
+                            class="font-jost font-medium text-dark-green md:text-xl text-[15px]  relative md:block hidden ">
+                            Trials</p>
+                        <p
+                            class="font-jost font-medium text-dark-green md:text-xl text-[15px]  relative md:hidden block">
+                            Products on
+                            trials</p>
+                    </div>
+                    <div class="pl-12 relative div-name-country">
+                        <p class="font-jost font-normal text-dark-green md:text-xl text-[15px]">
+                            Argentina, Bolivia, Colombia, Costa Rica, El Salvador, Mexico
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-16 lg:grid-cols-country-table md:grid-cols-country-table-tablet md:gap-8 hidden pills-block">
+            <div class="mb-8 md:mb-0 block ">
+                <img src="./img/MAP_PIC.svg" alt="#" class="mx-auto md:mx-0">
+            </div>
+            <div class="flex flex-col justify-between">
+                <div class="md:pb-0 pb-7">
+                    <div class="md:pb-5 pb-2 ml-4 relative flex gap-6.5 pink-rec">
+                        <span class="w-4 h-4 bg-red self-center"></span>
+                        <p class="font-jost font-medium text-dark-green md:text-xl text-[15px]">Products on sale</p>
+                    </div>
+
+                    <div class="mb-6 block">
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
+                            <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
+                                <img src="./img/brazil.svg" alt="#" class="">
+                                <p class="md:text-xl text-[15px]">Brazil</p>
+                            </div>
+                            <div class="grid grid-cols-country-table-text gap-1.5">
+                                <div class="flex justify-center w-full">
+                                    <span
+                                        class="px-1.5 py-1 country-flag-span align-middle self-start items-center text-center md:text-base text-[12px]">1
+                                    </span>
+                                </div>
+                                <p class="pt-1 md:text-base text-[12px] pr-4">plant protection/plant nutrition product
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class=" ml-4 relative pb-3 flex gap-6.5 pink-rec">
+                        <span class="w-4 h-4 self-center bg-pink"></span>
+                        <p
+                            class="font-jost font-medium text-dark-green md:text-xl text-[15px]  relative md:block hidden ">
+                            Trials</p>
+                        <p
+                            class="font-jost font-medium text-dark-green md:text-xl text-[15px]  relative md:hidden block">
+                            Products on
+                            trials</p>
+                    </div>
+                    <div class="pl-12 relative div-name-country">
+                        <p class="font-jost font-normal text-dark-green md:text-xl text-[15px]">
+                            Argentina, Bolivia, Colombia, Costa Rica, El Salvador, Mexico
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-16 lg:grid-cols-country-table md:grid-cols-country-table-tablet md:gap-8 hidden pills-block">
+            <div class="mb-8 md:mb-0 block ">
+                <img src="./img/MAP_PIC.svg" alt="#" class="mx-auto md:mx-0">
+            </div>
+            <div class="flex flex-col justify-between">
+                <div class="md:pb-0 pb-7">
+                    <div class="md:pb-5 pb-2 ml-4 relative flex gap-6.5 pink-rec">
+                        <span class="w-4 h-4 bg-red self-center"></span>
+                        <p class="font-jost font-medium text-dark-green md:text-xl text-[15px]">Products on sale</p>
+                    </div>
+
+                    <div class="mb-6 block">
                         <div
                             class="grid gap-3 grid-cols-country-table-flag border-t border-white-green last:border-b py-1.5 text-dark-green font-jost">
                             <div class="grid grid-cols-country-table-image gap-3 pt-1 pl-3">
